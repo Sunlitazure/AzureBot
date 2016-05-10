@@ -1,0 +1,187 @@
+TO-DO:
+-battery pack and charger
+-mpeg usb camera for vocore / drivers.
+-Java AI
+
+
+To buy:
+tons of leds
+lipo and charger
+voltage regulator
+
+
+robot specs:
+-servos will draw .5-2 amps
+-ni-mh battery AA in series will provide the necessary voltage and current requirements
+-mpja.com, allelectronics.com
+
+
+types of machine vision:
+Haar cascade: rotation invarient
+Blob detection: 
+feature detection: http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/
+	Surf detection: compares local details to source image
+	Fast
+	MSER
+TLD:pic obj in frame 1, track through others. learns rotations on all axis, improves over time.
+
+Vision TODO:
+use face tracking to select area of face to implement tld tracking. save tracking data in database indexed with a provided name for face.
+Show it objects, tell it where the object is and use tld to track and learn it. provide name to index data with.
+When detects my face first time in several hours greet me and interact.
+Use python to pull up window upon seeing me.
+
+
+Natural language topics:
+-Markov chains
+
+connect prolific device in vmware player
+gksudo putty
+root@192.168.61.1 pass: vocore : log into vocore when directly connected using putty
+find usb device port: dmesg | grep tty :list of connected tty devices
+id -Gn
+stty -F /dev/ttyUSB0
+stty -F /dev/ttyUSB0 57600 -ixon 
+gcc [name.cpp -o name] :compiles c program
+./name :runs program
+`find . -name mipsel-openwrt-linux-gcc` -g main.c -o hello (compile c program for vocore)
+staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-0.9.33.2/bin/mipsel-openwrt-linux-gcc
+scp filename root@192.168.1.103:/folder/filename :send filename to folder
+ls/dir: show all files
+arp -a: show all network connections
+firstboot :set to factory settings, fix luci
+/etc/init.d/firewall stop/start
+opkg list_installed :list all installed packages
+opkg list :all packages
+opkg install ______ :installs ______
+ifconfig -> wlan0 inet addr:192.168.1.10X or log into router, use dhcp list.: use if normal connection not working.
+tar -C / -xzf /tmp/backup-archive.tar.gz : scp config backup to /tmp/ then use this command to restore        backup
+ctrl + C :kills program running on terminal
+windows scp: cmd -> pscp source_file_name userid@server_name:relativepath\destination_file_name.
+windows scp download: cmd -> pscp userid@server_name:relativepath\source_file_name localpath\destiation_file_name
+go back folder: cd /..
+/dev folder: contains device files, interface for devices. http://www.linuxjournal.com/article/2597,  http://www.tldp.org/LDP/lkmpg/2.4/html/c854.htm
+cat /dev/filename :reads the contents of a file, device file
+command locations: echo $path
+show hidden files: ls -a
+display all packages installed: dpkg --get-selections
+whereis: find all source files and man pages for a command
+change oh-my-zsh theme: home directory, then vi ~/.zshrc
+find correct com port for serial: device manager-> Ports
+renew rsa host key: look at location in error, delete mentioned line from file. retry
+list all usb devices: lsusb
+
+
+issues:
+light stays on: power source sucks, get more power.
+serial not responding: be sure to attach ground of serial device.
+ubuntu stuck on screen: unity --replay  https://askubuntu.com/questions/489292/the-screen-freezes-dragging-windows-between-workspaces-in-ubuntu-14-04-lts
+
+
+
+tutorial:
+-luci > wifi >edit vocore > wireless security >set wpa2-psk, password >save/apply changes(do this after every luci change)(this may cause connection issues with router)
+-setup ap/sta mode http://vocore.io/wiki/index/id:17 (vi tutorial http://heather.cs.ucdavis.edu/~matloff/UnixAndC/Editors/ViIntro.html)(change putty terminal line discipline options until hjkl keys don't show in terminal)(ssid is just name of wireless network displayed when choosing to connect to one)(setting sta to DHCP means it will be assigned random ip)
+-find IP address: ifconfig while sshing -> wlan0 -> inet addr:192.168.1.10X
+-connect to vocore, log into luci, try to browse internet. If no connection go back and double check edited files for misspellinings or accidental ' ----------------------------------------------------------
+-disable masquerading and mss clamping on zone 'wan' under wifi
+-can now SSH over network. Us ^ as host name in putty, set to port 22.
+
+-setup environment http://vonger.cn/?p=1585  http://vocore.io/wiki/index/id:15 (step 2c be sure to save a ./config, so don't change the save file name at all)(screwing this up will give syntax error "(" or ")")
+      set to vocore: Target System = Ralink RT288x/TR3xxx
+                     Subtarget = RT3x5x/RT5350 based boards
+                     Target profile = Vocore
+
+       -install alsa/aplay
+			  in linux terminal: openwrt/scripts/feeds install alsa-utils
+                          make menuconfig -> utilities -> alsa-utils, alsa-utils-tests (maybe)
+       -enable audio
+              -make menuconfig, kernel modules -> sound support -> enable usb audio and sound core
+                                               -> USB support -> kmod-usb-core, kmod-usb ohci, kmod-usb2
+	           -go to main section ->utilities->usbuitils, then save and exit
+	      -green wire of usb connector goes to usb+, white to usb-. (if get error try reversing data lines, use lsusb to
+		test if usb device manufacturer is listed.)
+	      -use aplay command (scp .wav to temp, play with aplay. Set volume with alsamixer)
+	      -test with:  speaker-test front:Device -c8 twav
+		      http://alsa.opensrc.org/Speaker-test
+	      -alsa.opensrc.org
+
+      -uart setup
+            -open terminal, use dmesg | grep tty to identify proper usb port
+            -stty -F /dev/ttyUSB0 57600 -ixon
+            -install putty using sudo apt-get install putty
+            -install gksudo using sudo apt-get install gksudo
+            -run putty using gksudo putty
+            -set putty to serial, /dev/ttyUSB0
+     -install pwm/servo controller
+             -http://vonger.cn/?topic=pwm-is-running-at-gpios download file at bottom
+             -copy all files into apropriate spot
+             -edit vocore.dts with vi
+
+-enable username broadcasting: vi etc/config/network, add "option hostname 'VoCore' " under interface 'wwan'. Can now see name on router DHCP table (on linksys under status->local network dhcp client table)
+      -networking
+              -read all of http://www.tutorialspoint.com/cprogramming/index.htm
+              -read all of 		 http://beej.us/guide/bgnet/output/html/multipage/index.html
+                    (use IP as a string, e.g. "192.168.1.105" instead of "hostname")
+
+     -install i2c-tools
+              -download this file https://dev.openwrt.org/browser/packages/utils/i2c-tools?order=name
+                 (be sure to add luci)
+              -add to openwrt/package/utils/i2c-tools/ as Makefile in developement environment
+              -do make menuconfig, enable i2c-tools under Utilities
+              -enable luci, save (leave as just .config) and exit
+    
+     -install video
+	     -in linux terminal (set to openwrt directory): scripts/feeds install mjpg-streamer
+	     -make menuconfig, kernel modules->video support-> kmod-video-core, kmod-video-uvc, kmod-video-videobuf2
+		             , multimedia->mjpg-streamer->hit enter on it then ->install input uvc plugin,
+			     install output http plugin
+			     , libraries-> make sure libjpeg is enabled
+	     -(if fails in terminal use svn checkout https://svn.code.sf.net then p to perminantly accept)
+		-http://vonger.cn/?p=1652
+			-run using: /usr/bin/mjpg_streamer -i "input_uvc.so -d /dev/video0 -resolution 320x240" -o 
+			 "output_http.so -www /www/webcam"
+			- see with http://192.168.61.1:8080/?action=stream
+
+    -install usb storage
+	     
+		
+
+     -Build kernel: make -jX (where X is number of cores to use) :http://vonger.cn/?p=1585
+     -Upload new kernel
+	      -ALWAY MAKE A BACKUP !AND! DOWNLOAD CONFIG FILES WITH SCP
+              -upload to vocore using mtd and scp (use 8M version) : (ifconfig -> wlan0 inet addr:192.168.1.10X over serial)	                  http://vocore.io/wiki/index/id:14 (use option 4. mtd because connected to home wifi)
+              -restore ssh functionality by opening backup config files and manually updating the config files over serial
+		   (wireless and dhcp are vital to getting all the networks up and running, then set password in luci before
+		    scping the rest of the configs into /etc/config)
+              -either use luci to restore configs or use scp then tar -C / -xzf /tmp/backup-archive.tar.gz
+	      -if luci not setup use usb, hand fix network and wireless using vi and backup files in 		Documents/chickentech/vocore_configs. Then set password using passwd setting to vocore
+			-opkg update, opkg install luci
+			-/etc/init.d/uhttpd start, then /etc/init.d/uhttpd enable
+
+
+
+accelerometer data: 
+http://www.invensense.com/mems/gyro/documents/PS-MPU-6000A-00v3.4.pdf
+http://invensense.com/mems/gyro/documents/RM-MPU-6000A.pdf
+http://playground.arduino.cc/Main/MPU-6050#short
+
+i2cset 0 0x68 0x6b 0x01
+i2cset 0 0x68 0xXX 0xYY
+	0: /dev/i2c-0
+	slave address: 0x68
+	0xXX: register accessed
+	0xYY: data to send
+
+
+AI:
+Delta -RvB
+Yui -SAO (ep 12)
+Digimon
+Glados/ Wheatley
+Destiny Ghost
+hitchbot
+Cortana
+Megaman
+BMO
+Penny
