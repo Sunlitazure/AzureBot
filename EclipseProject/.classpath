@@ -14,54 +14,88 @@
 	<classpathentry kind="lib" path="lib/mbrola.jar"/>
 	<classpathentry kind="lib" path="lib/miglayout15-swing.jar"/>
 	<classpathentry kind="lib" path="lib/mp3plugin.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-calibration-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-feature-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-geo-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-io-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-ip-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-jcodec-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-learning-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-openkinect-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-recognition-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-sfm-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-visualize-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-WebcamCapture-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/BoofCV-xuggler-0.19.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/core-0.28.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/ddogleg-0.7.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/dense64-0.28.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/equation-0.28.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/georegression-0.8.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/simple-0.28.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/xmlpull-1.1.3.1.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/xpp3_min-1.1.4c.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/boofcv/xstream-1.4.7.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/webcam/bridj-0.6.2.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/webcam/slf4j-api-1.7.2.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/webcam/slf4j-simple-1.7.12.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/webcam/webcam-capture-0.3.10.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/artoolkitplus.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/artoolkitplus-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/ffmpeg.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/ffmpeg-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/flandmark.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/flandmark-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/flycapture.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/flycapture-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/javacpp.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/javacv.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/libdc1394.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/libfreenect.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/libfreenect-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/opencv.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/opencv-windows-x86_64.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/videoinput.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/videoinput-windows-x86.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/javacv/videoinput-windows-x86_64.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV-2.4.11"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/sphinx/sphinx4-core-5prealpha-20160218.203526-7.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/sphinx/sphinx4-data-5prealpha-20160218.203535-7.jar"/>
-	<classpathentry kind="lib" path="D:/chickentech/Programming/Java/User Libraries/JavaFlacEncoder/javaFlacEncoder-0.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-calibration-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-feature-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-geo-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-io-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-ip-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-jcodec-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-learning-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-openkinect-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-recognition-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-sfm-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-visualize-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-WebcamCapture-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/BoofCV-xuggler-0.19.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/core-0.28.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/ddogleg-0.7.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/dense64-0.28.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/equation-0.28.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/georegression-0.8.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/simple-0.28.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="lib/BoofCV/xstream-1.4.7.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-android-arm.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-android-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/artoolkitplus.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-android-arm.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-android-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/ffmpeg.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-android-arm.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-android-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flandmark.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flycapture-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flycapture-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flycapture-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flycapture-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/flycapture.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/javacpp.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/javacv.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libdc1394-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libdc1394-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libdc1394-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libdc1394.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/libfreenect.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-android-arm.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-android-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-linux-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/opencv.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/videoinput-windows-x86_64.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/videoinput-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lib/javacv/videoinput.jar"/>
+	<classpathentry kind="lib" path="lib/webcam/bridj-0.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/webcam/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/webcam/slf4j-simple-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/webcam/webcam-capture-0.3.10.jar"/>
+	<classpathentry kind="lib" path="lib/JavaFlacEncoder/javaFlacEncoder-0.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/sphinx/sphinx4-core-5prealpha-20160218.203526-7.jar"/>
+	<classpathentry kind="lib" path="lib/sphinx/sphinx4-data-5prealpha-20160218.203535-7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
